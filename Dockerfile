@@ -16,5 +16,7 @@ ENV PATH="${PATH}:/nix/var/nix/profiles/default/bin"
 
 ## Instalation of the shell tools
 ARG DEVBOX_VERSION=0.14.2
+ARG DEVENV_VERSION=v1.11.2
 
 RUN nix profile install github:jetify-com/devbox/${DEVBOX_VERSION}
+RUN nix profile install --accept-flake-config github:cachix/devenv/${DEVENV_VERSION}
