@@ -5,7 +5,23 @@
   env.GREET = "devenv";
 
   # https://devenv.sh/packages/
-  packages = [ pkgs.git ];
+  packages = [
+    pkgs.bat
+    pkgs.atuin
+    pkgs.zellij
+    pkgs.starship
+    pkgs.lazygit
+    pkgs.yazi
+    pkgs.helix
+    pkgs.dotbot
+    pkgs.eza
+    pkgs.fzf
+    pkgs.zoxide
+    pkgs.git
+    pkgs.devpod
+    pkgs.go-task
+    pkgs.lazydocker
+  ];
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
