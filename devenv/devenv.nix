@@ -4,6 +4,8 @@
   # https://devenv.sh/basics/
   env.GREET = "devenv";
 
+  devcontainer.enable = true;
+
   # https://devenv.sh/packages/
   packages = [
     pkgs.bat
