@@ -75,7 +75,11 @@
     },
     "hook": {},
     "profile": {},
-    "options": {}
+    "options": {
+      "allow": {
+        "unfree": true
+      }
+    }
   },
   "packages": [
     {
