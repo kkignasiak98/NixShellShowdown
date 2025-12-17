@@ -25,6 +25,14 @@
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
+  languages.python.enable = true;
+  languages.python.version = "3.14.0";
+  languages.go.enable = true;
+  languages.go.version = "1.25.4";
+  languages.r.enable = true;
+  languages.julia.enable = true;
+
+
 
   # https://devenv.sh/processes/
   # processes.dev.exec = "${lib.getExe pkgs.watchexec} -n -- ls -la";
