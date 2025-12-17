@@ -3,6 +3,10 @@
   "manifest": {
     "version": 1,
     "install": {
+      "R": {
+        "pkg-path": "R",
+        "version": "4.5"
+      },
       "atuin": {
         "pkg-path": "atuin",
         "version": "18.8.0"
@@ -29,6 +33,10 @@
       "git": {
         "pkg-path": "git"
       },
+      "go": {
+        "pkg-path": "go",
+        "version": "1.25"
+      },
       "go-task": {
         "pkg-path": "go-task"
       },
@@ -43,6 +51,10 @@
       "lazygit": {
         "pkg-path": "lazygit",
         "version": "0.56.0"
+      },
+      "python3": {
+        "pkg-path": "python3",
+        "version": "3.13"
       },
       "starship": {
         "pkg-path": "starship",
@@ -66,6 +78,126 @@
     "options": {}
   },
   "packages": [
+    {
+      "attr_path": "R",
+      "broken": false,
+      "derivation": "/nix/store/7xrp00i6zb823bczffs8rdcdp1q4sx1g-R-4.5.1.drv",
+      "description": "Free software environment for statistical computing and graphics",
+      "install_id": "R",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "R-4.5.1",
+      "pname": "R",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:17.882075Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.5.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/a78c0614mziglvfwkgpf2ci99v5mhw5f-R-4.5.1",
+        "tex": "/nix/store/y3mc4ps8jfsrk4n0mgv55vfgv6n7kfbn-R-4.5.1-tex"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "R",
+      "broken": false,
+      "derivation": "/nix/store/g6c1byclsfmaw73f3q8i9yaddzzlhrql-R-4.5.1.drv",
+      "description": "Free software environment for statistical computing and graphics",
+      "install_id": "R",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "R-4.5.1",
+      "pname": "R",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:28:57.114997Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.5.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/37jafalrzyn9jj6bvdf1v1wzh41jpnss-R-4.5.1",
+        "tex": "/nix/store/nysjsb4j68dnchqdb8bggksm70cklidz-R-4.5.1-tex"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "R",
+      "broken": false,
+      "derivation": "/nix/store/620b45w27ks8hg0cl1i9xkw7yj14dpnv-R-4.5.1.drv",
+      "description": "Free software environment for statistical computing and graphics",
+      "install_id": "R",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "R-4.5.1",
+      "pname": "R",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:54:56.991955Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.5.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/qsjj6izcyiwb9c91zkqj5k7d8b1sfyz0-R-4.5.1",
+        "tex": "/nix/store/nyjmfni0hzqx4fjmsmhljxzf7dss33r2-R-4.5.1-tex"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "R",
+      "broken": false,
+      "derivation": "/nix/store/6dqsgi991wrq0askzl2jkjhs2s0gb89c-R-4.5.1.drv",
+      "description": "Free software environment for statistical computing and graphics",
+      "install_id": "R",
+      "license": "GPL-2.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "R-4.5.1",
+      "pname": "R",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:20:46.396033Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "4.5.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/5yg7by02r4zlgdvzj635l9py17qigajs-R-4.5.1",
+        "tex": "/nix/store/avn4a1r2niv0h6nhmpaqynw5k3hl8ln1-R-4.5.1-tex"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "atuin",
       "broken": false,
@@ -905,6 +1037,122 @@
       "priority": 5
     },
     {
+      "attr_path": "go",
+      "broken": false,
+      "derivation": "/nix/store/2xb67c4l9xxlrvaxa9ilgg33h591scjf-go-1.25.2.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "go-1.25.2",
+      "pname": "go",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:19.240817Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.25.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nkhf1yv637cp91y79zap7jxmm98v8pvj-go-1.25.2"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go",
+      "broken": false,
+      "derivation": "/nix/store/rcv50wc3xkxlq1xbjsas1fgr5rbwk337-go-1.25.2.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "go-1.25.2",
+      "pname": "go",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:28:59.326449Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.25.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/p1d8jb1k4db3aiqwyp8b1kw4mja3qygx-go-1.25.2"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go",
+      "broken": false,
+      "derivation": "/nix/store/1pkqcd6nfpd80zz7zww5jl8srgp0sx96-go-1.25.2.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "go-1.25.2",
+      "pname": "go",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:54:58.294187Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.25.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/xvwacgkf3x446qq3mdsh3v13f8935wa3-go-1.25.2"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "go",
+      "broken": false,
+      "derivation": "/nix/store/zffz4bwhyymy1l87064qgcyzfgqzlcz6-go-1.25.2.drv",
+      "description": "Go Programming language",
+      "install_id": "go",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "go-1.25.2",
+      "pname": "go",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:20:48.815668Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.25.2",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/k1kn1c59ss7nq6agdppzq3krwmi3xqy4-go-1.25.2"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
       "attr_path": "go-task",
       "broken": false,
       "derivation": "/nix/store/9n3x78fcscnz03nxh1d1jkmqyvjv02fs-go-task-3.45.4.drv",
@@ -1363,6 +1611,124 @@
       ],
       "outputs": {
         "out": "/nix/store/gyk6jxyzflvwlwgw4qgh3xcjp5rairi6-lazygit-0.56.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/3myrb1pixxdm651xcsghs4p6syz0rx9i-python3-3.13.8.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
+      "pname": "python3",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:56.837163Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.13.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/s7ik6dazn4nd2jdg9l36qf5q0z18sjyk-python3-3.13.8"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/4sjw3f3s8nf705jpcvvsh3ibpicqj8cb-python3-3.13.8.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
+      "pname": "python3",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:29:59.207269Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.13.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/53m4xy9yaar25rc2g85fb3qvjxnwfhq5-python3-3.13.8-debug",
+        "out": "/nix/store/m0b67b3lmjcxa8aplpl75qpb26gr5vsf-python3-3.13.8"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/hgr3c3s4dq87qdzbyb0rqw2cz7yxnqgr-python3-3.13.8.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
+      "pname": "python3",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:55:36.404976Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.13.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ddvx7n1y63g4i9bg0bim3r4ick1cc8x9-python3-3.13.8"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python3",
+      "broken": false,
+      "derivation": "/nix/store/nd0m36nc8xf05cdb9pi4jjyqsk1xzgxv-python3-3.13.8.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python3",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "python3-3.13.8",
+      "pname": "python3",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:21:54.126584Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.13.8",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/ckj4gnblikbb37gvydggaicw6f0kmcx3-python3-3.13.8-debug",
+        "out": "/nix/store/cfapjd2rvqrpry4grb0kljnp8bvnvfxz-python3-3.13.8"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
