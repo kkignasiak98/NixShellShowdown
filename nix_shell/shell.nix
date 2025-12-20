@@ -3,23 +3,20 @@ let
   nixpkgs = fetchTarball "https://github.com/NixOS/nixpkgs/archive/refs/tags/24.05.tar.gz";
   nixpkgs-unstable = fetchTarball "https://github.com/NixOS/nixpkgs/archive/refs/tags/24.11-beta.tar.gz";
   nixpkgs-old = fetchTarball "https://github.com/NixOS/nixpkgs/archive/refs/tags/19.09.tar.gz";
-  
+
   pkgs = import nixpkgs {};
   pkgs-unstable = import nixpkgs-unstable {};
   pkgs-old = import nixpkgs-old {};
-in 
-
-pkgs.mkShell {
-
-  buildInputs = [
-    pkgs.python311Full 
-    pkgs.python311Packages.pip 
-    pkgs.poetry
-    #python313 # Example how to add another python version
-    pkgs.git
-    pkgs.just
-    #pkgs-unstable.uv Example how to use another channel
-    pkgs-old.R # Example of old version 3.6.1
-  ];
-
-}
+in
+  pkgs.mkShell {
+    buildInputs = [
+      pkgs.python311Full
+      pkgs.python311Packages.pip
+      pkgs.poetry
+      #python313 # Example how to add another python version
+      pkgs.git
+      pkgs.just
+      #pkgs-unstable.uv Example how to use another channel
+      pkgs-old.R # Example of old version 3.6.1
+    ];
+  }
