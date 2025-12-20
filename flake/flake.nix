@@ -1,15 +1,27 @@
 {
-  description = "A very basic flake";
+  description = "A Nix-flake-based Node.js development environment";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
   };
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self , nixpkgs ,... }: let
+    # system should match the system you are running on
+    system = "x86_64-linux";
+  in {
+    devShells."${system}".default = let
+      pkgs = import nixpkgs { inherit system; };
+    in pkgs.mkShell {
+      # create an environment with nodejs, pnpm, and yarn
+      packages = with pkgs; [
+        nodejs_24
+        nodePackages.pnpm
+        (yarn.override { nodejs = nodejs_24; })
+      ];
 
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
-
-    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
-
+      shellHook = ''
+        echo "node `node --version`"
+      '';
+    };
   };
 }
