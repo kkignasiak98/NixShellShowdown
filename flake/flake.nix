@@ -3,37 +3,39 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs_unstable = { url = "github:nixos/nixpkgs/nixos-unstable"; };
   };
 
-  outputs = { self , nixpkgs ,... }: let
+  outputs = { self , nixpkgs , nixpkgs_unstable ,... }: let
     # system should match the system you are running on
     system = "x86_64-linux";
   in {
     devShells."${system}".default = let
       pkgs = import nixpkgs { inherit system; };
+      pkgsUnstable = import nixpkgs_unstable { inherit system; };
     in pkgs.mkShell {
       
-      packages = with pkgs; [
-        bat
-        atuin
-        zellij
-        starship
-        lazygit
-        yazi
-        helix
-        dotbot
-        eza
-        fzf
-        zoxide
-        git
-        lazydocker
-        devpod
-        go-task
-        python3
-        go
-        R
-        julia
-        zsh
+      packages = [
+        pkgs.bat
+        pkgs.atuin
+        pkgs.zellij
+        pkgs.starship
+        pkgs.lazygit
+        pkgs.yazi
+        pkgs.helix
+        pkgs.dotbot
+        pkgs.eza
+        pkgs.fzf
+        pkgs.zoxide
+        pkgs.git
+        pkgs.lazydocker
+        pkgs.devpod
+        pkgs.go-task
+        pkgs.python3
+        pkgs.go
+        pkgs.R
+        pkgsUnstable.julia
+        pkgs.zsh
       ];
 
       shellHook = ''
