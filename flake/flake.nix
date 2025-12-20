@@ -1,5 +1,5 @@
 {
-  description = "A Nix-flake-based Node.js development environment";
+  description = "A Nix-flake-based development environment";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
@@ -12,15 +12,32 @@
     devShells."${system}".default = let
       pkgs = import nixpkgs { inherit system; };
     in pkgs.mkShell {
-      # create an environment with nodejs, pnpm, and yarn
+      
       packages = with pkgs; [
-        nodejs_24
-        nodePackages.pnpm
-        (yarn.override { nodejs = nodejs_24; })
+        bat
+        atuin
+        zellij
+        starship
+        lazygit
+        yazi
+        helix
+        dotbot
+        eza
+        fzf
+        zoxide
+        git
+        lazydocker
+        devpod
+        go-task
+        python3
+        go
+        R
+        julia
+        zsh
       ];
 
       shellHook = ''
-        echo "node `node --version`"
+        exec zsh
       '';
     };
   };
