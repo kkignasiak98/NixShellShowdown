@@ -12,8 +12,6 @@
       let pkgs = nixpkgs.legacyPackages.${system};
           pkgsUnstable = nixpkgs_unstable.legacyPackages.${system};
       in {
-        packages.hello = pkgs.hello;
-
         devShell = pkgs.mkShell {
            buildInputs = [
                   pkgs.bat
