@@ -17,16 +17,16 @@
 
 ## Requirement compliance matrix
 
-| ID | nix-shell | flox | devenv | devbox |
-| --- | --- | --- | --- | --- |
-| **R1 (Cross-platform operability)** | ✅ | ✅ | ✅ | ✅ |
-| **R2 (Container-friendly usage)** | ✅ | ✅ | ✅ | ✅ |
-| **R3 (Versioned self-installation)** | ⚠️ | ✅ | ✅ | ✅ |
-| **R4 (Versioned package installation)** | ✅ | ✅ | ⚠️ | ✅ |
-| **R5 (Transparent retrieval of package-version metadata)** | Low | Medium | Medium | High |
-| **R6 (Support for global package management)** | `Not applicable` | ✅ | ❌ | ✅ |
-| **R7 (Automatic containerization)** | ❌ | ✅ | ✅ | ✅ (Best) |
-| **R8 (Usability)** | Low | High | Medium | Very high |
+| ID | nix-shell | flox | devenv | devbox | Flakes |
+| --- | --- | --- | --- | --- | --- |
+| **R1 (Cross-platform operability)** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R2 (Container-friendly usage)** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **R3 (Versioned self-installation)** | ⚠️ | ✅ | ✅ | ✅ | ⚠️ |
+| **R4 (Versioned package installation)** | ✅ | ✅ | ⚠️ | ✅ | ✅ |
+| **R5 (Transparent retrieval of package-version metadata)** | Low | Medium | Medium | High | Low |
+| **R6 (Support for global package management)** | `Not applicable` | ✅ | ❌ | ✅ | ❌ |
+| **R7 (Automatic containerization)** | ❌ | ✅ | ✅ | ✅ (Best) | ❌ |
+| **R8 (Usability)** | Low | High | Medium | Very high | low |
 
 
 
@@ -38,12 +38,12 @@ The same for `flox list` and `devbox list`
 
 ## Action matrix
 
-| Action | `nix-shell` | `flox` | `devenv` | `devbox` |
-| --- | --- | --- | --- | --- |
-| **list all packages and their versions** | TBD | `flox list` | `devenv info` | `devbox list` |
-| **adding package** | Add the package to `shell.nix` | Use `flox install` <pkg> (or edit `flox.toml`) | Add the package to `devenv.yaml`/config. | Use `devbox add <pkg>` (or edit `devbox.json`) |
-| **enter shell** | Run `nix-shell` | Use `flox activate` | Run `devenv shell` | Run `devbox shell` |
-| **usable inside containers** | ✅ (usable inside containers; install Nix or use official images) | ✅ (official images / installable) | ✅ (official images / installable) | ✅ (official images available / installable) |
+| Action | `nix-shell` | `flox` | `devenv` | `devbox` | `Flakes` |
+| --- | --- | --- | --- | --- | --- |
+| **list all packages and their versions** | TBD | `flox list` | `devenv info` | `devbox list` | TBD |
+| **adding package** | Add the package to `shell.nix` | Use `flox install` <pkg> (or edit `flox.toml`) | Add the package to `devenv.yaml`/config. | Use `devbox add <pkg>` (or edit `devbox.json`) | Add the package to `flake.nix` (e.g., `devShells` or `inputs`) |
+| **enter shell** | Run `nix-shell` | Use `flox activate` | Run `devenv shell` | Run `devbox shell` | Run `nix develop` |
+| **usable inside containers** | ✅ (usable inside containers; install Nix or use official images) | ✅ (official images / installable) | ✅ (official images / installable) | ✅ (official images available / installable) | TBD |
 
 
 ## nix-shell additional tools
