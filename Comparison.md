@@ -71,10 +71,10 @@ environments.</td>
 <tr>
 <th style="background: #1e1e2e; color: #cdd6f4;">ID</th>
 <th style="background: #1e1e2e; color: #f9e2af;">🐚 nix-shell</th>
+<th style="background: #1e1e2e; color: #cba6f7;">❄️ Flakes</th>
 <th style="background: #1e1e2e; color: #fab387;">🦊 flox</th>
 <th style="background: #1e1e2e; color: #a6e3a1;">🌿 devenv</th>
 <th style="background: #1e1e2e; color: #89b4fa;">📦 devbox</th>
-<th style="background: #1e1e2e; color: #cba6f7;">❄️ Flakes</th>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R1</code> Cross-platform</td>
@@ -95,50 +95,50 @@ environments.</td>
 <tr>
 <td><code style="color: #89b4fa;">R3</code> Versioned self-install</td>
 <td>⚠️</td>
-<td>✅</td>
-<td>✅</td>
-<td>✅</td>
 <td>⚠️</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R4</code> Versioned packages</td>
 <td>✅</td>
 <td>✅</td>
-<td>⚠️</td>
 <td>✅</td>
+<td>⚠️</td>
 <td>✅</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R5</code> Package metadata</td>
 <td><span style="color: #f38ba8;">Low</span></td>
-<td><span style="color: #f9e2af;">Medium</span></td>
+<td><span style="color: #f38ba8;">Low</span></td>
+<td><span style="color: #a6e3a1;">High</span></td>
 <td><span style="color: #f9e2af;">Medium</span></td>
 <td><span style="color: #a6e3a1;">High</span></td>
-<td><span style="color: #f38ba8;">Low</span></td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R6</code> Global package mgmt</td>
 <td><span style="color: #6c7086;">N/A</span></td>
+<td><span style="color: #6c7086;">N/A</span></td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
-<td>❌</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R7</code> Auto containerization</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅ <span style="color: #a6e3a1;"><b>(Best)</b></span></td>
-<td>❌</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R8</code> Usability</td>
 <td><span style="color: #f38ba8;">Low</span></td>
+<td><span style="color: #f38ba8;">Low</span></td>
 <td><span style="color: #a6e3a1;">High</span></td>
 <td><span style="color: #f9e2af;">Medium</span></td>
 <td><span style="color: #a6e3a1;"><b>Very High</b></span></td>
-<td><span style="color: #f38ba8;">Low</span></td>
 </tr>
 </table>
 
@@ -195,7 +195,7 @@ The same for `flox list` and `devbox list`
 <td>✅ <em>Official images / installable</em></td>
 <td>✅ <em>Official images / installable</em></td>
 <td>✅ <em>Official images available / installable</em></td>
-<td><span style="color: #6c7086;">TBD</span></td>
+<td>✅ <em>Install Nix or use official images</em></td>
 </tr>
 </table>
 
