@@ -204,6 +204,14 @@ Enhance your `nix-shell` experience with these community tools:
 
 ---
 
+## 💡 Fun Fact: Firebase Studio
+
+> **Firebase Studio** (formerly known as **Project IDX**) is the only IDE that is built on Nix for its development environment configuration.
+>
+> While it's an interesting showcase of Nix's capabilities in a cloud IDE context, it is **not included in this comparison** because its configuration is tightly coupled to the Firebase Studio platform itself and cannot be used outside of it. By definition, this makes it incompatible with the cross-platform and tool-agnostic requirements evaluated in this comparison.
+
+---
+
 <div align="center">
 <sub>🌙 Styled with <b>Catppuccin Mocha</b> theme</sub>
 </div>
