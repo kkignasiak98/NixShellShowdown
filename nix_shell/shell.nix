@@ -10,13 +10,25 @@ let
 in
   pkgs.mkShell {
     buildInputs = [
-      pkgs.python311Full
-      pkgs.python311Packages.pip
-      pkgs.poetry
-      #python313 # Example how to add another python version
+      pkgs.bat
+      pkgs.atuin
+      pkgs.zellij
+      pkgs.starship
+      pkgs.lazygit
+      pkgs.yazi
+      pkgs.helix
+      pkgs.dotbot
+      pkgs.eza
+      pkgs.fzf
+      pkgs.zoxide
       pkgs.git
-      pkgs.just
-      #pkgs-unstable.uv Example how to use another channel
+      pkgs.devpod
+      pkgs.go-task
+      pkgs.lazydocker
+
       pkgs-old.R # Example of old version 3.6.1
+      pkgs.python314
+      pkgs.go
+      pkgs-unstable.julia # Example how to use unstable channel
     ];
   }
