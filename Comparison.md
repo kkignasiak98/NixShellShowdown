@@ -153,11 +153,11 @@ The same for `flox list` and `devbox list`
 </tr>
 <tr>
 <td><b>📋 List packages & versions</b></td>
-<td><span style="color: #6c7086;">TBD</span></td>
+<td><code style="color: #f9e2af;">nix repl</code><br><code style="color: #f9e2af;">:l shell.nix</code><br><code style="color: #f9e2af;">buildInputs</code></td>
 <td><code style="color: #fab387;">flox list</code></td>
 <td><code style="color: #a6e3a1;">devenv info</code></td>
 <td><code style="color: #89b4fa;">devbox list</code></td>
-<td><span style="color: #6c7086;">TBD</span></td>
+<td><code style="color: #cba6f7;">nix repl</code><br><code style="color: #cba6f7;">:lf .</code><br><code style="color: #cba6f7;">devShells.&lt;system&gt;.default.buildInputs</code></td>
 </tr>
 <tr>
 <td><b>➕ Add package</b></td>
@@ -184,6 +184,9 @@ The same for `flox list` and `devbox list`
 <td><span style="color: #6c7086;">TBD</span></td>
 </tr>
 </table>
+
+> [!NOTE]
+> For Flakes, replace `<system>` with your platform identifier, e.g., `x86_64-linux`, `aarch64-linux`, `x86_64-darwin`, or `aarch64-darwin`.
 
 ---
 
