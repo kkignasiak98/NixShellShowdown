@@ -14,38 +14,52 @@
 <tr>
 <th style="background: #1e1e2e; color: #cdd6f4;">ID</th>
 <th style="background: #1e1e2e; color: #cdd6f4;">Requirement</th>
+<th style="background: #1e1e2e; color: #cdd6f4;">Rationale</th>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R1</code></td>
 <td><b>Cross-platform operability</b> — The software shall be compatible with the major OS platforms—Linux, macOS, and Windows.</td>
+<td>Ensures research accessibility across Linux, macOS, and Windows environments.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R2</code></td>
-<td><b>Container-friendly usage</b> — The software shall be usable inside containers — both via official container images and by installation inside custom containers. <em>Rationale: Ensures research accessibility when a containerized environment is preferred or required.</em></td>
+<td><b>Container-friendly usage</b> — The software should be
+able to be used inside containers. Both official images and
+installation inside custom container.</td>
+<td>Ensures research accessibility when containerized environment is preferred/needed.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R3</code></td>
-<td><b>Versioned self-installation</b> — The tool must support the installation of a user-selected version of the tool itself, enabling reproducible deployments across heterogeneous environments.</td>
+<td><b>Versioned self-installation</b> — The tool must support
+the installation of a user - selected version of the tool itself,
+enabling reproducible deployments across heterogeneous
+environments.</td>
+<td>Guarantees consistent deployment across heterogeneous computing environments.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R4</code></td>
 <td><b>Versioned package installation</b> — The framework shall allow explicit selection of package versions during installation, ensuring deterministic dependency resolution.</td>
+<td>Guarantees deterministic environments by preventing version drift in dependencies.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R5</code></td>
 <td><b>Transparent retrieval of package-version metadata</b> — The exact versions of all packages employed in a given project shall be readily obtainable, enabling rapid assessment of the project's dependency composition.</td>
+<td>Facilitates granular auditing of the computational environment through transparent dependency tracking.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R6</code></td>
 <td><b>Support for global package management</b> — The tool shall be capable of managing dependencies at a system-wide scope, allowing users to install and resolve packages globally rather than only in project-specific environments.</td>
+<td>Facilitates adoption by providing a unified interface for both isolated projects and system-wide setup.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R7</code></td>
 <td><b>Automatic containerization</b> — Based on the defined configuration, the tool should be able to automatically generate a container image—or, preferentially, a Dockerfile, and optionally a corresponding devcontainer specification.</td>
+<td>Allows researchers to share their work in situations when container image is required/recommended and facilitates seamless execution on High-Performance Computing (HPC) clusters.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R8</code></td>
 <td><b>Usability</b> — The design must accommodate users with limited familiarity with the Nix language, thereby lowering the entry barrier and smoothing the learning curve.</td>
+<td>Encourages adoption among domain scientists (e.g., biologists, physicists) who prioritize research over complex systems administration as well as smooths the learning curve.</td>
 </tr>
 </table>
 
