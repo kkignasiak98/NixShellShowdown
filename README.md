@@ -75,6 +75,11 @@ Each subdirectory contains a **`.metadata.md`** file that describes the contents
 <td>✋ <span style="color: #f5c2e7;">Manual</span> configuration</td>
 </tr>
 <tr>
+<td><code style="color: #f5c2e7;">npins/</code></td>
+<td>📌 npins</td>
+<td>✋ <span style="color: #f5c2e7;">Manual</span> configuration (auto-generated npins/ subdirectory)</td>
+</tr>
+<tr>
 <td><code style="color: #f38ba8;">firebase_studio/</code></td>
 <td>🔥 Firebase Studio</td>
 <td>🤖 <span style="color: #a6e3a1;">Auto-generated</span> configuration</td>

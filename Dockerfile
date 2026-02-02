@@ -26,3 +26,4 @@ RUN nix profile install --accept-flake-config github:cachix/devenv/${DEVENV_VERS
 RUN nix profile install --accept-flake-config github:flox/flox/${FLOX_VERSION}
 RUN nix profile install nixpkgs#lorri
 RUN nix profile install nixpkgs#cached-nix-shell
+RUN nix profile install nixpkgs#npins

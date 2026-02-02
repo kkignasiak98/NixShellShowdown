@@ -1,0 +1,23 @@
+{
+  "pins": {
+    "nixpkgs-old": {
+      "type": "Channel",
+      "name": "nixos-19.09",
+      "url": "https://releases.nixos.org/nixos/19.09/nixos-19.09.2522.75f4ba05c63/nixexprs.tar.xz",
+      "hash": "sha256-/qPiFcqXsc+ZeNqQL1qBl5beDWPX4vkbupPlOZ+A4e4="
+    },
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixos-24.05",
+      "url": "https://releases.nixos.org/nixos/24.05/nixos-24.05.7376.b134951a4c9f/nixexprs.tar.xz",
+      "hash": "sha256-m6KS4Y44VAxk5ZnELE2dzLbjPtKRGtsprphQC6A7Erk="
+    },
+    "nixpkgs-unstable": {
+      "type": "Channel",
+      "name": "nixpkgs-unstable",
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-26.05pre938079.207d15f1a660/nixexprs.tar.xz",
+      "hash": "sha256-yhx60WhiedsoVP5XopEGspK7M+/kY8bm1sWVg07cEa0="
+    }
+  },
+  "version": 7
+}
