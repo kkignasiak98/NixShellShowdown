@@ -71,6 +71,7 @@ environments.</td>
 <tr>
 <th style="background: #1e1e2e; color: #cdd6f4;">ID</th>
 <th style="background: #1e1e2e; color: #f9e2af;">🐚 nix-shell</th>
+<th style="background: #1e1e2e; color: #f5c2e7;">📌 npins</th>
 <th style="background: #1e1e2e; color: #cba6f7;">❄️ Flakes</th>
 <th style="background: #1e1e2e; color: #fab387;">🦊 flox</th>
 <th style="background: #1e1e2e; color: #a6e3a1;">🌿 devenv</th>
@@ -78,6 +79,7 @@ environments.</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R1</code> Cross-platform</td>
+<td>✅</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
@@ -91,9 +93,11 @@ environments.</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R3</code> Versioned self-install</td>
+<td>⚠️</td>
 <td>⚠️</td>
 <td>⚠️</td>
 <td>✅</td>
@@ -105,11 +109,13 @@ environments.</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅</td>
+<td>✅</td>
 <td>⚠️</td>
 <td>✅</td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R5</code> Package metadata</td>
+<td><span style="color: #f38ba8;">Low</span></td>
 <td><span style="color: #f38ba8;">Low</span></td>
 <td><span style="color: #f38ba8;">Low</span></td>
 <td><span style="color: #a6e3a1;">High</span></td>
@@ -120,6 +126,7 @@ environments.</td>
 <td><code style="color: #89b4fa;">R6</code> Global package mgmt</td>
 <td><span style="color: #6c7086;">N/A</span></td>
 <td><span style="color: #6c7086;">N/A</span></td>
+<td><span style="color: #6c7086;">N/A</span></td>
 <td>✅</td>
 <td>❌</td>
 <td>✅</td>
@@ -128,12 +135,14 @@ environments.</td>
 <td><code style="color: #89b4fa;">R7</code> Auto containerization</td>
 <td>❌</td>
 <td>❌</td>
+<td>❌</td>
 <td>✅</td>
 <td>✅</td>
 <td>✅ <span style="color: #a6e3a1;"><b>(Best)</b></span></td>
 </tr>
 <tr>
 <td><code style="color: #89b4fa;">R8</code> Usability</td>
+<td><span style="color: #f38ba8;">Low</span></td>
 <td><span style="color: #f38ba8;">Low</span></td>
 <td><span style="color: #f38ba8;">Low</span></td>
 <td><span style="color: #a6e3a1;">High</span></td>
@@ -146,6 +155,8 @@ environments.</td>
 
 > [NOTE]:
 > **nix-shell:** The ability to install specific package versions is limited (requires pinning multiple nix channels) and package version information is not easy to retrieve. nix-shell does not provide automatic containerization and the concept of a global package manager does not apply to it.
+>
+> **npins:** Functions similarly to nix-shell but with improved dependency pinning through the npins tool. Package version information retrieval remains limited, no automatic containerization, and global package management concept does not apply.
 >
 > **devenv:** Installing specific package versions and retrieving package version information is limited to most popular programming languages, and automatic containerization is limited — it requires adding additional inputs.
 
@@ -160,6 +171,7 @@ The same for `flox list` and `devbox list`
 <tr>
 <th style="background: #1e1e2e; color: #cdd6f4;">Action</th>
 <th style="background: #1e1e2e; color: #f9e2af;">🐚 nix-shell</th>
+<th style="background: #1e1e2e; color: #f5c2e7;">📌 npins</th>
 <th style="background: #1e1e2e; color: #fab387;">🦊 flox</th>
 <th style="background: #1e1e2e; color: #a6e3a1;">🌿 devenv</th>
 <th style="background: #1e1e2e; color: #89b4fa;">📦 devbox</th>
@@ -168,6 +180,7 @@ The same for `flox list` and `devbox list`
 <tr>
 <td><b>📋 List packages & versions</b></td>
 <td><code style="color: #f9e2af;">nix repl</code><br><code style="color: #f9e2af;">:l shell.nix</code><br><code style="color: #f9e2af;">buildInputs</code></td>
+<td><code style="color: #f5c2e7;">nix repl</code><br><code style="color: #f5c2e7;">:l shell.nix</code><br><code style="color: #f5c2e7;">buildInputs</code></td>
 <td><code style="color: #fab387;">flox list</code></td>
 <td><code style="color: #a6e3a1;">devenv info</code></td>
 <td><code style="color: #89b4fa;">devbox list</code></td>
@@ -176,6 +189,7 @@ The same for `flox list` and `devbox list`
 <tr>
 <td><b>➕ Add package</b></td>
 <td>Add to <code style="color: #f9e2af;">shell.nix</code></td>
+<td>Add to <code style="color: #f5c2e7;">shell.nix</code></td>
 <td><code style="color: #fab387;">flox install &lt;pkg&gt;</code><br><em>or edit <code>flox.toml</code></em></td>
 <td>Add to <code style="color: #a6e3a1;">devenv.yaml</code>/config</td>
 <td><code style="color: #89b4fa;">devbox add &lt;pkg&gt;</code><br><em>or edit <code>devbox.json</code></em></td>
@@ -184,6 +198,7 @@ The same for `flox list` and `devbox list`
 <tr>
 <td><b>🚀 Enter shell</b></td>
 <td><code style="color: #f9e2af;">nix-shell</code></td>
+<td><code style="color: #f5c2e7;">nix-shell</code></td>
 <td><code style="color: #fab387;">flox activate</code></td>
 <td><code style="color: #a6e3a1;">devenv shell</code></td>
 <td><code style="color: #89b4fa;">devbox shell</code></td>
@@ -191,6 +206,7 @@ The same for `flox list` and `devbox list`
 </tr>
 <tr>
 <td><b>🐳 Container support</b></td>
+<td>✅ <em>Install Nix or use official images</em></td>
 <td>✅ <em>Install Nix or use official images</em></td>
 <td>✅ <em>Official images / installable</em></td>
 <td>✅ <em>Official images / installable</em></td>
