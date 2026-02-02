@@ -156,7 +156,7 @@ environments.</td>
 > [NOTE]:
 > **nix-shell:** The ability to install specific package versions is limited (requires pinning multiple nix channels) and package version information is not easy to retrieve. nix-shell does not provide automatic containerization and the concept of a global package manager does not apply to it.
 >
-> **npins:** Functions similarly to nix-shell but with improved dependency pinning through the npins tool. Package version information retrieval remains limited, no automatic containerization, and global package management concept does not apply.
+> **npins:** Functions similarly to nix-shell but with improved dependency pinning through the npins tool. Npins is a de facto successor of [niv](https://github.com/nmattia/niv). See the [npins repository](https://github.com/andir/npins) for more information. Package version information retrieval remains limited, no automatic containerization, and global package management concept does not apply.
 >
 > **devenv:** Installing specific package versions and retrieving package version information is limited to most popular programming languages, and automatic containerization is limited — it requires adding additional inputs.
 
